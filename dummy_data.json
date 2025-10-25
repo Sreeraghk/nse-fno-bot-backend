@@ -1,0 +1,29 @@
+[
+  {
+    "symbol": "RELIANCE",
+    "oi_change_pct": 20.50,
+    "price_change_pct": 1.25,
+    "volume_change_pct": 5.10,
+    "oi_change_last_hour_pct": 1.50,
+    "pcr_now": 0.85,
+    "last_updated": 1730000000.0
+  },
+  {
+    "symbol": "HDFC",
+    "oi_change_pct": -15.20,
+    "price_change_pct": -0.50,
+    "volume_change_pct": 3.20,
+    "oi_change_last_hour_pct": -0.20,
+    "pcr_now": 1.15,
+    "last_updated": 1730000000.0
+  },
+  {
+    "symbol": "INFY",
+    "oi_change_pct": 5.00,
+    "price_change_pct": 0.10,
+    "volume_change_pct": 1.00,
+    "oi_change_last_hour_pct": 0.50,
+    "pcr_now": 0.95,
+    "last_updated": 1730000000.0
+  }
+]
