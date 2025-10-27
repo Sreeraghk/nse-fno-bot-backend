@@ -431,3 +431,25 @@ async def get_status():
 # We will skip this for now and rely on the startup event for initial data.
 # The cron job will be part of the deployment instructions.
 
+
+@app.post("/api/v1/trigger-update")
+async def trigger_update():
+    """
+    Endpoint for external cron job to trigger data processing.
+    This keeps the backend awake and processes fresh data.
+    """
+    try:
+        process_all_data()
+        return {
+            "status": "success",
+            "message": "Data processing triggered successfully",
+            "processed_stocks": len(PROCESSED_DATA),
+            "timestamp": time.time()
+        }
+    except Exception as e:
+        print(f"Error in trigger-update: {e}")
+        return {
+            "status": "error",
+            "message": str(e),
+            "timestamp": time.time()
+        }
